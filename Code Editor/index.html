@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="code">
+            <div class="html">
+                <i class='bx bxl-html5'> HTML</i>
+                <div class="editor-container">
+                    <div id="editor-html" class="editor" onkeyup="run()">&lt!--Write your HTML code here--&gt
+</div>
+                </div>
+            </div>
+            <div class="css">
+                <i class='bx bxl-css3'> CSS</i>
+                <div class="editor-container">
+                    <div id="editor-css" class="editor" onkeyup="run()">/*Write your CSS code here*/
+</div>
+                </div>
+            </div>
+            <div class="js">
+                <i class='bx bxl-javascript'> JAVASCRIPT</i>
+                <div class="editor-container">
+                    <div id="editor-js" class="editor" onkeyup="run()">//Write your JS code here
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="preview">
+            <i class='bx bx-play'></i>
+            <span>Output</span>
+            <div class="screen">
+                <iframe id="preview"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.33.1/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.33.1/ext-language_tools.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

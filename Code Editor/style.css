@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #1a1a1a;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 0.15em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.8);
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(100, 100, 100, 0.4);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.code, .preview{
+    flex-basis: 50%;
+    padding: 0 10px;
+}
+
+.screen{
+    width: 100%;
+    height: 95%;
+    margin-top: 5px;
+    background-color: #fff;
+    iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+.html,.css, .js, .preview{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.editor-container{
+    width: 100%;
+    height: 27vh;
+    margin-top: 5px;
+    position: relative;
+}
+#editor-html, #editor-css, #editor-js{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    font-size: 20px;
+}
